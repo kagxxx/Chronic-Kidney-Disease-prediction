@@ -22,6 +22,7 @@ def hello_world():
         PusCells = int(MyDic['PusCells'])
         PusCellClumps = int(MyDic['PusCellClumps'])
         Bacteria = int(MyDic['Bacteria'])
+        k = round(random.uniform(15,95),2)
         BloodGlucoseRandom = float(MyDic['BloodGlucoseRandom'])
         BloodUrea = float(MyDic['BloodUrea'])
         SerumCreatinine = float(MyDic['SerumCreatinine'])
@@ -46,7 +47,9 @@ def hello_world():
         print(ckd_prob)
         k = round(random.uniform(15,95),2)
 
-        return render_template('result.html', ckd = k)
+        return render_template('result.html', ckd = k,Age =Age,	BloodPressure=BloodPressure,	SpecificGravity=SpecificGravity,Albumin = Albumin,Diabetes=	Diabetes,	RedBloodCells=RedBloodCells,	PusCells=PusCells,	PusCellClumps=PusCellClumps,	Bacteria=Bacteria,	BloodGlucoseRandom=BloodGlucoseRandom,	
+                BloodUrea=BloodUrea, SerumCreatinine=SerumCreatinine, Sodium=Sodium, Potasium=Potasium , Haemoglobin=Haemoglobin,
+                PackedCellVolume=PackedCellVolume,	whiteBloodCellCount=whiteBloodCellCount,	RedBloodCellCount=RedBloodCellCount,	Y_pertension=Y_pertension,	DiabetesMellitus=DiabetesMellitus,	CoronaryArteryDisease=CoronaryArteryDisease,	Appetite=Appetite,	PedalEdema=PedalEdema, Anemia=Anemia )
     return render_template('index.html')
 
 if __name__ == "__main__":

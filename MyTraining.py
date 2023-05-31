@@ -94,11 +94,10 @@ if __name__ == "__main__":
         'pedal edema', 'anemia']].to_numpy()
     
     Y_train = train[['class']].to_numpy().reshape(300,)
-
     Y_test = test[['class']].to_numpy().reshape(100,)
 
 
-    clf = LogisticRegression(solver='lbfgs', max_iter=100000)
+    clf = LogisticRegression(solver='lbfgs', max_iter=10000000)
     clf.fit(X_train, Y_train)
 
     file = open('model.pkl','wb')
