@@ -24,6 +24,7 @@
         left: 34vw;
         background: #d6b5ec;
         border-radius: 33px;
+        margin-top: 2vh;
       }
       .heading {
         text-align: center;
@@ -34,7 +35,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: stretch;
-        width: 25%;
+        width: 40%;
       }
       .BP {
         position: relative;
@@ -62,15 +63,54 @@
         height: 7vh;
         margin: 5vh 0;
       }
+
+      @media(max-width:1150px){
+        body{
+          background-repeat: repeat-y;
+          overflow-x: hidden;
+        }
+        .common{
+          margin-left: 6vw;
+        }
+        .left{
+          display: block;
+          position: relative;
+          left: 25vw;
+          width: 100vw;
+        }
+        .right{
+          display: block;
+          position: relative;
+          left: 25vw;
+          width: 100vw;
+        }
+        .headingDiv{
+          width: 50vw;
+          left: 25vw;
+        }
+      }
+      @media(max-width:750px){
+        .btn{
+          width: 30vw;
+          left: 35vw;
+        }
+        .headingDiv{
+          width: 90vw;
+          left: 5vw;
+        }
+        .title{
+          font-size:4vw ;
+        }
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <h2>Chronic Kidney Disease Probability Detector</h2>
+          <h2 class="title">Chronic Kidney Disease Probability Detector</h2>
         </a>
-        <button
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -80,15 +120,15 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav"> -->
             <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
             <!-- <a class="nav-link" href="#">Features</a> -->
             <!-- <a class="nav-link" href="#">Pricing</a> -->
             <!-- <a class="nav-link disabled">Disabled</a> -->
-          </div>
-        </div>
+          <!-- </div>
+        </div> -->
       </div>
     </nav>
     <div class="headingDiv">
