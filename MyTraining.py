@@ -110,8 +110,6 @@ if __name__ == "__main__":
     ckd_prob = clf.predict_proba([input_features])[0][1]
 
     print(ckd_prob)
-    k = round(random.uniform(0,100),2)
-    print(k)
 
 
 
