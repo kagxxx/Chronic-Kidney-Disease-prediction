@@ -46,7 +46,7 @@ def hello_world():
         print(input_features)
         print(ckd_prob)
 
-        return render_template('result.html', ckd = k,Age =Age,	BloodPressure=BloodPressure,	SpecificGravity=SpecificGravity,Albumin = Albumin,Diabetes=	Diabetes,	RedBloodCells=RedBloodCells,	PusCells=PusCells,	PusCellClumps=PusCellClumps,	Bacteria=Bacteria,	BloodGlucoseRandom=BloodGlucoseRandom,	
+        return render_template('result2.html', ckd = k,Age =Age,	BloodPressure=BloodPressure,	SpecificGravity=SpecificGravity,Albumin = Albumin,Diabetes=	Diabetes,	RedBloodCells=RedBloodCells,	PusCells=PusCells,	PusCellClumps=PusCellClumps,	Bacteria=Bacteria,	BloodGlucoseRandom=BloodGlucoseRandom,	
                 BloodUrea=BloodUrea, SerumCreatinine=SerumCreatinine, Sodium=Sodium, Potasium=Potasium , Haemoglobin=Haemoglobin,
                 PackedCellVolume=PackedCellVolume,	whiteBloodCellCount=whiteBloodCellCount,	RedBloodCellCount=RedBloodCellCount,	Y_pertension=Y_pertension,	DiabetesMellitus=DiabetesMellitus,	CoronaryArteryDisease=CoronaryArteryDisease,	Appetite=Appetite,	PedalEdema=PedalEdema, Anemia=Anemia )
     return render_template('index.html')
